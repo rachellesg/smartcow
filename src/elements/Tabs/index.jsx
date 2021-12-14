@@ -18,27 +18,29 @@ function Tabs(pages) {
   return (
     <>
       <ul className="tabs">
-        {pageContent.map((page) => {
-          return (
-            <>
-              <li
-                key={page.name}
-                className={`tab ${selectTab === page.name ? "active" : ""}`}
-                onClick={() => {
-                  selectedAccountTabs(page.name);
-                }}
-              >
-                {page.name}
-              </li>
-            </>
-          );
-        })}
+        {pageContent.length != 0 &&
+          pageContent.map((page) => {
+            return (
+              <>
+                <li
+                  key={page.name}
+                  className={`tab ${selectTab === page.name ? "active" : ""}`}
+                  onClick={() => {
+                    selectedAccountTabs(page.name);
+                  }}
+                >
+                  {page.name}
+                </li>
+              </>
+            );
+          })}
       </ul>
 
       {pageContent.map((page) => {
+        const { name, content } = page;
         return (
-          <div className="tabs-content" key={page.name}>
-            {selectTab === page.name ? page.content : ""}
+          <div className="tabs-content" key={name}>
+            {name === selectTab ? content() : null}
           </div>
         );
       })}

@@ -1,5 +1,5 @@
 function Profile() {
-  return <>Wzzup</>;
+  return <>What IS UP</>;
 }
 
-export default Profile();
+export default Profile;

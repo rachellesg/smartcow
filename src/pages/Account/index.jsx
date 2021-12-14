@@ -1,4 +1,7 @@
 // Pages
+import Profile from "./Profile";
+import Plan from "./Plan";
+import Billing from "./Billing";
 
 // Elements
 import Tabs from "../../elements/Tabs";
@@ -8,9 +11,9 @@ import { AccountWrapper } from "./styles";
 
 function Account() {
   const pages = [
-    { name: "Profile", content: "Profile XX" },
-    { name: "My Plan", content: "Plan C" },
-    { name: "Billing", content: "Billing NN" },
+    { name: "Profile", content: () => <Profile /> },
+    { name: "My Plan", content: () => <Plan /> },
+    { name: "Billing", content: () => <Billing /> },
   ];
   return (
     <AccountWrapper>
