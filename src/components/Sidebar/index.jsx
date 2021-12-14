@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 
 // Assets
 import logo from "../../assets/logo.svg";
-import "./Styled";
+import "./styles";
 
 function Sidebar() {
   return (
