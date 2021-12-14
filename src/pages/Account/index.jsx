@@ -9,7 +9,7 @@ import { AccountWrapper } from "./styles";
 function Account() {
   const pages = [
     { name: "Profile", content: "Profile XX" },
-    { name: "Plan", content: "Plan C" },
+    { name: "My Plan", content: "Plan C" },
     { name: "Billing", content: "Billing NN" },
   ];
   return (
