@@ -1,11 +1,11 @@
 import styled from "styled-components";
 
-export const Sidebar = styled.div`
+export const SidebarWrapper = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  div {
+  a {
     margin: 15px 0;
   }
 `;

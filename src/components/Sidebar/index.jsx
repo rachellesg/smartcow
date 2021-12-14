@@ -1,12 +1,12 @@
 import { Link } from "react-router-dom";
+import { SidebarWrapper } from "./styles";
 
 // Assets
 import logo from "../../assets/logo.svg";
-import "./styles";
 
 function Sidebar() {
   return (
-    <Sidebar className="col s2">
+    <SidebarWrapper className="col s2">
       <img
         src={logo}
         style={{ height: "40px" }}
@@ -15,7 +15,7 @@ function Sidebar() {
       />
       <Link to="/home">Home</Link>
       <Link to="/account">Account</Link>
-    </Sidebar>
+    </SidebarWrapper>
   );
 }
 

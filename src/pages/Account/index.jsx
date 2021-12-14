@@ -1,7 +1,5 @@
-import { AccountWrapper } from "./styles";
-
 function Account() {
-  return <AccountWrapper>This is account page</AccountWrapper>;
+  return <>This is account page</>;
 }
 
 export default Account;

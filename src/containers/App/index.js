@@ -14,7 +14,6 @@ function App() {
       <div className="row">
         <Router>
           <Sidebar />
-          {/* Main Content Start */}
           <div className="col offset-s1 s9">
             <Routes>
               <Route exact path="/" element={<Home />} />
