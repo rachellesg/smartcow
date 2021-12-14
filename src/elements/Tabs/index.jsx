@@ -20,16 +20,17 @@ function Tabs(pages) {
       <ul className="tabs">
         {pageContent.length != 0 &&
           pageContent.map((page) => {
+            const { name } = page;
             return (
               <>
                 <li
-                  key={page.name}
-                  className={`tab ${selectTab === page.name ? "active" : ""}`}
+                  key={name}
+                  className={`tab ${selectTab === name ? "active" : ""}`}
                   onClick={() => {
-                    selectedAccountTabs(page.name);
+                    selectedAccountTabs(name);
                   }}
                 >
-                  {page.name}
+                  {name}
                 </li>
               </>
             );
