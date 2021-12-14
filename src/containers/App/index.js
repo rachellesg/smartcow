@@ -1,33 +1,28 @@
-import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
-
-// Routes
-import Home from "../../pages/Home";
-import Account from "../../pages/Account";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 // Components
 import Sidebar from "../../components/Sidebar";
 
-// Assets
-import "./App.css";
+// Pages
+import Home from "../../pages/Home";
+import Account from "../../pages/Account";
 
 function App() {
   return (
-    <div className="App">
+    <div className="container">
       {/* Page Container */}
-      <div className="container">
-        <div className="row">
-          <Router>
-            <Sidebar />
-            {/* Main Content Start */}
-            <div className="col offset-s1 s9">
-              <Routes>
-                <Route exact path="/" element={<Home />} />
-                <Route path="/account" element={<Account />} />
-                <Route path="*" element={<Home />} />
-              </Routes>
-            </div>
-          </Router>
-        </div>
+      <div className="row">
+        <Router>
+          <Sidebar />
+          {/* Main Content Start */}
+          <div className="col offset-s1 s9">
+            <Routes>
+              <Route exact path="/" element={<Home />} />
+              <Route exact path="/account" element={<Account />} />
+              <Route exact path="*" element={<Home />} />
+            </Routes>
+          </div>
+        </Router>
       </div>
     </div>
   );
