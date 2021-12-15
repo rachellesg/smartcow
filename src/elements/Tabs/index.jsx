@@ -1,13 +1,6 @@
 import { useState } from "react";
 
-// Data props required
-// const pages = [
-//   { name: "Profile", content: "Profile XX" }
-// ];
-
-function Tabs(pages) {
-  const pageContent = pages.pages;
-
+function Tabs({ pageContent }) {
   // First tab is always default
   const [selectTab, setSelectTab] = useState(pageContent[0].name);
 
@@ -18,21 +11,19 @@ function Tabs(pages) {
   return (
     <>
       <ul className="tabs">
-        {pageContent.length != 0 &&
+        {pageContent.length !== 0 &&
           pageContent.map((page) => {
             const { name } = page;
             return (
-              <>
-                <li
-                  key={name}
-                  className={`tab ${selectTab === name ? "active" : ""}`}
-                  onClick={() => {
-                    selectedAccountTabs(name);
-                  }}
-                >
-                  {name}
-                </li>
-              </>
+              <li
+                key={name}
+                className={`tab ${selectTab === name ? "active" : ""}`}
+                onClick={() => {
+                  selectedAccountTabs(name);
+                }}
+              >
+                {name}
+              </li>
             );
           })}
       </ul>
