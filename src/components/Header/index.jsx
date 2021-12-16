@@ -1,10 +1,12 @@
+import { HeaderWrapper } from "./styles";
+
 function Header({ pageHeaderDetails }) {
   console.log(pageHeaderDetails);
   const { pageTitle, buttonsHeader } = pageHeaderDetails;
   return (
-    <div className="header">
-      <h1>{pageTitle}</h1> / {buttonsHeader()}
-    </div>
+    <HeaderWrapper className="header">
+      <h1>{pageTitle}</h1> {buttonsHeader()}
+    </HeaderWrapper>
   );
 }
 
