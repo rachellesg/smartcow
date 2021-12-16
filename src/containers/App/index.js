@@ -7,14 +7,16 @@ import Sidebar from "../../components/Sidebar";
 import Home from "../../pages/Home";
 import Account from "../../pages/Account";
 
+import { AppWrapper } from "./styles";
+
 function App() {
   return (
     <div className="container">
       {/* Page Container */}
-      <div className="row">
+      <AppWrapper className="row">
         <Router>
           <Sidebar />
-          <div className="col offset-s1 s9">
+          <div className="main-content col l10 s12">
             <Routes>
               <Route exact path="/" element={<Home />} />
               <Route exact path="/account" element={<Account />} />
@@ -22,7 +24,7 @@ function App() {
             </Routes>
           </div>
         </Router>
-      </div>
+      </AppWrapper>
     </div>
   );
 }
