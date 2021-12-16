@@ -1,11 +1,23 @@
 import InputField from "../../../elements/InputField";
 import { PrimaryButton } from "../../../elements/Button";
 
+import userProfilePhoto from "../../../assets/user_profile-photo.png";
+import EditIcon from "../../../assets/Icons/Edit";
+
+import { UserProfilePhotoWrapper } from "./styles";
+
 function Profile() {
   return (
     <form className="row">
-      <div className="col s12">this is profile content yeh</div>
-      <div className="col s6">
+      <UserProfilePhotoWrapper className="col s12">
+        <img
+          className="user_profile-photo"
+          src={userProfilePhoto}
+          alt="User Profile Photo"
+        />
+        <EditIcon background="#e7edf9" fill="#3860AD" />
+      </UserProfilePhotoWrapper>
+      <div className="col s12 l4">
         <InputField
           value=""
           fieldName="First Name"
@@ -13,7 +25,7 @@ function Profile() {
           fieldType="text"
         />
       </div>
-      <div className="col s6">
+      <div className="col s12 l4">
         <InputField
           value=""
           fieldName="Last Name"
@@ -21,12 +33,12 @@ function Profile() {
           fieldType="text"
         />
       </div>
-      <div className="col s12">
+      <div className="clearfix col s12 l4">
         <InputField
           value=""
-          fieldName="Password"
-          fieldId="password"
-          fieldType="password"
+          fieldName="Email"
+          fieldId="email"
+          fieldType="email"
         />
       </div>
       <div className="col s12">
