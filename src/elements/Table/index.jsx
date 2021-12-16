@@ -4,7 +4,7 @@ import { TableWrapper } from "./styles";
 
 function Table({ headers, data }) {
   return (
-    <TableWrapper>
+    <TableWrapper className="responsive-table">
       <thead>
         <tr>
           {headers !== 0 &&
