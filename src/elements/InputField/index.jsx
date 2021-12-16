@@ -1,3 +1,5 @@
+import { InputFieldWrapper } from "./styles";
+
 export default function InputField({
   fieldName,
   fieldValue,
@@ -5,14 +7,14 @@ export default function InputField({
   fieldType,
 }) {
   return (
-    <div className="input-field">
+    <InputFieldWrapper className="input-field">
+      <label htmlFor={fieldId}>{fieldName}</label>
       <input
         id={fieldId}
         value={fieldValue || undefined}
         type={fieldType || "text"}
         className="validate"
       />
-      <label htmlFor={fieldId}>{fieldName}</label>
-    </div>
+    </InputFieldWrapper>
   );
 }
