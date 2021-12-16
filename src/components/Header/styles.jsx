@@ -19,11 +19,4 @@ export const HeaderWrapper = styled.div`
     bottom: 0;
     left: 0;
   }
-
-  h1 {
-    font-size: 22px;
-    font-weight: 500;
-    text-align: left;
-    margin: 0;
-  }
 `;
