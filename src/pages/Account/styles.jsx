@@ -9,7 +9,7 @@ export const AccountWrapper = styled.div`
       text-align: left;
       text-transform: none;
       flex-grow: 0;
-      min-width: 100px;
+      min-width: 80px;
       font-size: 15px;
       font-weight: 500;
       line-height: 23px;
