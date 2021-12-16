@@ -3,6 +3,7 @@ import { SidebarWrapper } from "./styles";
 
 // Assets
 import logo from "../../assets/logo.svg";
+import account from "../../assets/sidebar_account.svg";
 
 function Sidebar() {
   return (
@@ -61,7 +62,9 @@ function Sidebar() {
           </Link>
         </div>
         <div className="account">
-          <Link to="/account">Account</Link>
+          <Link to="/account">
+            <img src={account} style={{ height: "40px" }} alt="Account" />
+          </Link>
         </div>
       </nav>
     </SidebarWrapper>
