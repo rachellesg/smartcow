@@ -15,7 +15,7 @@ import { AccountWrapper } from "./styles";
 function Account() {
   const pageHeaderDetails = {
     pageTitle: "My Account",
-    buttonsHeader: () => <button>Log Out</button>,
+    buttonsHeader: () => <a href="#logout">Logout</a>,
   };
   const pages = [
     { name: "Profile", content: () => <Profile /> },

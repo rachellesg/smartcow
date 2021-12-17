@@ -1,3 +1,4 @@
+// Elements
 import Table from "../../../elements/Table";
 
 function Billing() {

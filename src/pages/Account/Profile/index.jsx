@@ -1,9 +1,12 @@
+// Elements
 import InputField from "../../../elements/InputField";
 import { PrimaryButton } from "../../../elements/Button";
 
+// Assets
 import userProfilePhoto from "../../../assets/user_profile-photo.png";
 import EditIcon from "../../../assets/Icons/Edit";
 
+// Styles
 import { UserProfilePhotoWrapper } from "./styles";
 
 function Profile() {
