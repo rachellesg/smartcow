@@ -40,14 +40,21 @@ export const SidebarWrapper = styled.div`
       justify-content: space-between;
       align-items: center;
 
-      svg {
-      }
-
       a {
-        color: #000000;
+        color: #999999;
         display: flex;
+        justify-content: center;
         align-items: center;
-        margin: 25px 0;
+        margin: 10px;
+        width: 60px;
+        height: 60px;
+        border-radius: 10px;
+        &:hover {
+          background: #ebf2ff;
+          svg {
+            color: #3860ad;
+          }
+        }
       }
     }
     .account {

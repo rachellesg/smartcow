@@ -3,9 +3,9 @@ import { SidebarWrapper } from "./styles";
 
 // Assets
 import logo from "../../assets/logo.svg";
-import createVideos from "../../assets/sidebar_videos-create.svg";
-import savedVideos from "../../assets/sidebar_videos-saved.svg";
 import account from "../../assets/sidebar_account.svg";
+import CreateVideoIcon from "../../assets/Icons/CreateVideo";
+import SavedVideoIcon from "../../assets/Icons/SavedVideo";
 
 function Sidebar() {
   return (
@@ -21,10 +21,10 @@ function Sidebar() {
       <nav>
         <div className="nav-links">
           <Link to="/videos/create">
-            <img src={createVideos} />
+            <CreateVideoIcon />
           </Link>
           <Link to="/videos/saved">
-            <img src={savedVideos} />
+            <SavedVideoIcon />
           </Link>
         </div>
         <div className="account">

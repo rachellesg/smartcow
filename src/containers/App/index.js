@@ -6,6 +6,7 @@ import Sidebar from "../../components/Sidebar";
 // Pages
 import Home from "../../pages/Home";
 import Account from "../../pages/Account";
+import Videos from "../../pages/Videos";
 import SavedVideos from "../../pages/Videos/Saved";
 
 import { AppWrapper } from "./styles";
@@ -21,7 +22,7 @@ function App() {
             <Routes>
               <Route exact path="/" element={<Home />} />
               <Route exact path="/account" element={<Account />} />
-              <Route exact path="/videos/create" element={<Home />} />
+              <Route exact path="/videos/create" element={<Videos />} />
               <Route exact path="/videos/saved" element={<SavedVideos />} />
               <Route exact path="*" element={<Home />} />
             </Routes>
