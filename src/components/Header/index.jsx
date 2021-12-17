@@ -5,7 +5,7 @@ function Header({ pageHeaderDetails }) {
   const { pageTitle, buttonsHeader } = pageHeaderDetails;
   return (
     <HeaderWrapper className="header">
-      <h1>{pageTitle}</h1> {buttonsHeader()}
+      <h1>{pageTitle}</h1> {buttonsHeader ? buttonsHeader() : ""}
     </HeaderWrapper>
   );
 }

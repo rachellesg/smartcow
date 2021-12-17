@@ -8,6 +8,7 @@ export const HeaderWrapper = styled.div`
   position: relative;
   padding: 10px 0 30px 0;
   margin-bottom: 30px;
+  min-height: 77px;
 
   &:after {
     background: #000000;
