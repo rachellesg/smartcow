@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import { SidebarWrapper } from "./styles";
 
 // Assets
@@ -20,12 +20,18 @@ function Sidebar() {
       </div>
       <nav>
         <div className="nav-links">
-          <Link to="/videos/create">
+          <NavLink
+            className={(navData) => (navData.isActive ? "active" : "")}
+            to="/videos/create"
+          >
             <CreateVideoIcon />
-          </Link>
-          <Link to="/videos/saved">
+          </NavLink>
+          <NavLink
+            className={(navData) => (navData.isActive ? "active" : "")}
+            to="/videos/saved"
+          >
             <SavedVideoIcon />
-          </Link>
+          </NavLink>
         </div>
         <div className="account">
           <Link to="/account">

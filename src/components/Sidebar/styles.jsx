@@ -49,6 +49,12 @@ export const SidebarWrapper = styled.div`
         width: 60px;
         height: 60px;
         border-radius: 10px;
+        &.active {
+          background: #ebf2ff;
+          svg {
+            color: #3860ad;
+          }
+        }
         &:hover {
           background: #ebf2ff;
           svg {
