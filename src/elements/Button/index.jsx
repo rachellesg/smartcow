@@ -13,10 +13,16 @@ export const Button = styled.button`
 export const PrimaryButton = styled(Button)`
   background: rgb(99 169 76);
   color: #ffffff;
+  a {
+    color: #ffffff;
+  }
 `;
 
 export const SecondaryButton = styled(Button)`
   background: #f1f1f1;
   font-size: 14px;
   color: #999999;
+  a {
+    color: #999999;
+  }
 `;
