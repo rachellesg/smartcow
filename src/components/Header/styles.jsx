@@ -20,4 +20,8 @@ export const HeaderWrapper = styled.div`
     bottom: 0;
     left: 0;
   }
+
+  button {
+    margin-left: 20px;
+  }
 `;
