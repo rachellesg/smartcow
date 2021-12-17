@@ -19,7 +19,7 @@ function Card({ data }) {
           return (
             <CardWrapper
               key={name}
-              className={`col s6 l${desktopColumns} ${
+              className={`card-wrapper col s6 l${desktopColumns} ${
                 checkSelectedPackage ? "active" : ""
               }`}
             >

@@ -1,5 +1,7 @@
+// Elements
 import Card from "../../../elements/Card";
 
+// Styles
 import { PlanWrapper } from "./styles";
 
 function Plan() {
