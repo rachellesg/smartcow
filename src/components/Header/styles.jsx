@@ -24,4 +24,15 @@ export const HeaderWrapper = styled.div`
   button {
     margin-left: 20px;
   }
+
+  .header-editable {
+    .input-field input[type="text"] {
+      font-size: 22px;
+      line-height: 33px;
+      font-weight: 500;
+
+      color: #3860ad;
+      border: 0;
+    }
+  }
 `;
