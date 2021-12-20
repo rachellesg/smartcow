@@ -3,7 +3,8 @@ import styled from "styled-components";
 export const InputFieldWrapper = styled.div`
   margin-top: 0;
   input[type="text"],
-  input[type="email"] {
+  input[type="email"],
+  input[type="password"] {
     border: 1px solid #999999;
     box-sizing: border-box;
     border-radius: 6px;
