@@ -1,5 +1,7 @@
 import { useState } from "react";
 
+import { TabsWrapper } from "./styles.jsx";
+
 function Tabs({ pageContent }) {
   // First tab is always default
   const [selectTab, setSelectTab] = useState(pageContent[0].name);
@@ -9,7 +11,7 @@ function Tabs({ pageContent }) {
   };
 
   return (
-    <>
+    <TabsWrapper>
       <ul className="tabs">
         {pageContent.length !== 0 &&
           pageContent.map((page) => {
@@ -36,7 +38,7 @@ function Tabs({ pageContent }) {
           </div>
         );
       })}
-    </>
+    </TabsWrapper>
   );
 }
 
