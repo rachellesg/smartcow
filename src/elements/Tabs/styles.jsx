@@ -6,6 +6,10 @@ export const TabsWrapper = styled.div`
     margin-bottom: 45px;
     height: auto !important;
     .tab {
+      @media screen and (max-width: 768px) {
+        margin-right: 22px;
+        margin-top: 45px;
+      }
       text-align: left;
       text-transform: none;
       flex-grow: 0;
