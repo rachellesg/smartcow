@@ -25,7 +25,7 @@ function Billing() {
   ];
   return (
     <div className="row">
-      <div className="col l9">
+      <div className="col s12 l9">
         <Table headers={billingHeaders} data={billingDetails} />
       </div>
     </div>
