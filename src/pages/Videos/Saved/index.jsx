@@ -15,9 +15,9 @@ function SavedVideos() {
   const pageHeaderDetails = {
     pageTitle: "Saved Videos",
     buttonsHeader: () => (
-      <PrimaryButton>
-        <Link to="/videos/create">Create New</Link>
-      </PrimaryButton>
+      <Link to="/videos/create">
+        <PrimaryButton>Create New</PrimaryButton>
+      </Link>
     ),
   };
   return (

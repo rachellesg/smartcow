@@ -26,6 +26,7 @@ export const CreateVideoWrapper = styled.div`
       }
     }
   }
+
   background: #f4f4f4;
   border-radius: 20px;
   padding: 20px;
@@ -69,11 +70,12 @@ export const CreateVideoWrapper = styled.div`
 export const TabsWrapper = styled.div`
   @media screen and (max-width: 768px) {
     .tabs {
+      justify-content: space-between;
       margin-top: 45px;
     }
 
-    .item {
+    /* .item {
       margin-right: 25px;
-    }
+    } */
   }
 `;

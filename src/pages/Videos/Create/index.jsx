@@ -21,9 +21,9 @@ function Videos() {
     isEditable: true,
     buttonsHeader: () => <PrimaryButton>Save</PrimaryButton>,
     cancelButton: () => (
-      <SecondaryButton>
-        <Link to="/videos/saved">Cancel</Link>
-      </SecondaryButton>
+      <Link to="/videos/saved">
+        <SecondaryButton>Cancel</SecondaryButton>
+      </Link>
     ),
   };
   const editableHeaderOnClick = () => {};

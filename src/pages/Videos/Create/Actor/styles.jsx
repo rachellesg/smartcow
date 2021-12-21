@@ -6,7 +6,7 @@ export const ActorWrapper = styled.div`
   flex: 1 1 33%;
   flex-wrap: wrap;
   .item {
-    margin-right: 11px;
+    margin-right: 5px;
     margin-bottom: 15px;
     @media screen and (max-width: 413px) {
       margin-right: 5px;
