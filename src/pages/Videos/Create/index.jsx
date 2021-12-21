@@ -2,6 +2,7 @@ import { Link } from "react-router-dom";
 
 // Pages
 import Actor from "./Actor";
+import Background from "./Background";
 
 // Components
 import Header from "../../../components/Header";
@@ -11,7 +12,7 @@ import Tabs from "../../../elements/Tabs";
 import { PrimaryButton, SecondaryButton } from "../../../elements/Button";
 
 // STyles
-import { CreateVideoWrapper } from "./styles";
+import { CreateVideoWrapper, TabsWrapper } from "./styles";
 
 function Videos() {
   const pageHeaderDetails = {
@@ -30,7 +31,7 @@ function Videos() {
     { name: "Actor", content: () => <Actor /> },
     { name: "Voice", content: () => "Wut" },
     { name: "Alignment", content: () => "Yar" },
-    { name: "Background", content: () => "Yar" },
+    { name: "Background", content: () => <Background /> },
   ];
   return (
     <>
@@ -52,7 +53,9 @@ function Videos() {
           </CreateVideoWrapper>
         </div>
         <div className="col s12 l5">
-          <Tabs pageContent={pages} />
+          <TabsWrapper>
+            <Tabs pageContent={pages} />
+          </TabsWrapper>
         </div>
       </div>
     </>

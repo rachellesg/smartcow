@@ -8,6 +8,9 @@ export const ActorWrapper = styled.div`
   .item {
     margin-right: 11px;
     margin-bottom: 15px;
+    @media screen and (max-width: 413px) {
+      margin-right: 5px;
+    }
     cursor: pointer;
     &.active {
       .image {
@@ -17,8 +20,10 @@ export const ActorWrapper = styled.div`
         color: #3860ad;
       }
     }
-    &:nth-child(3n + 3) {
-      margin-right: 0;
+    @media screen and (min-width: 1025px) {
+      &:nth-child(3n + 3) {
+        margin-right: 0;
+      }
     }
     .image {
       border: 1px solid #e8e8e8;
