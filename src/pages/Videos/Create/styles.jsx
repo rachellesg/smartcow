@@ -40,3 +40,16 @@ export const CreateVideoWrapper = styled.div`
     }
   }
 `;
+
+// Specificity for mobile responsive view
+export const TabsWrapper = styled.div`
+  @media screen and (max-width: 768px) {
+    .tabs {
+      margin-top: 45px;
+    }
+
+    .item {
+      margin-right: 25px;
+    }
+  }
+`;

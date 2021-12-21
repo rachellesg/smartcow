@@ -8,7 +8,6 @@ export const TabsWrapper = styled.div`
     .tab {
       @media screen and (max-width: 768px) {
         margin-right: 22px;
-        margin-top: 45px;
       }
       text-align: left;
       text-transform: none;
