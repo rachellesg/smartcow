@@ -21,6 +21,13 @@ export const SidebarWrapper = styled.div`
   .logo {
     margin-bottom: 75px;
   }
+
+  @media screen and (max-width: 768px) {
+    &:after {
+      width: 0;
+    }
+  }
+
   nav {
     display: flex;
     flex-direction: column;
@@ -34,11 +41,19 @@ export const SidebarWrapper = styled.div`
     border: 0;
     box-shadow: none;
 
+    @media screen and (max-width: 768px) {
+      height: 0;
+    }
+
     .nav-links {
       display: flex;
       flex-direction: column;
       justify-content: space-between;
       align-items: center;
+
+      @media screen and (max-width: 768px) {
+        display: none;
+      }
 
       a {
         color: #999999;
@@ -65,6 +80,10 @@ export const SidebarWrapper = styled.div`
     }
     .account {
       bottom: 0;
+
+      @media screen and (max-width: 768px) {
+        display: none;
+      }
     }
   }
 `;

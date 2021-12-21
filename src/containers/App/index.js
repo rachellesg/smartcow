@@ -17,7 +17,9 @@ function App() {
       {/* Page Container */}
       <AppWrapper className="row">
         <Router>
-          <Sidebar />
+          <div className="sidebar col s12 l1">
+            <Sidebar />
+          </div>
           <div className="main-content col l10 s12">
             <Routes>
               <Route exact path="/" element={<Home />} />

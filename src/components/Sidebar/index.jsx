@@ -9,7 +9,7 @@ import SavedVideoIcon from "../../assets/Icons/SavedVideo";
 
 function Sidebar() {
   return (
-    <SidebarWrapper className="col s12 l1">
+    <SidebarWrapper>
       <div className="logo">
         <img
           src={logo}
