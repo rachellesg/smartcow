@@ -25,7 +25,12 @@ export const AppWrapper = styled.div`
     line-height: 33px;
   }
 
-  .main-content {
-    margin-left: 40px !important;
+  @media screen and (max-width: 768px) {
+  }
+
+  @media screen and (min-width: 1024px) {
+    .main-content {
+      margin-left: 40px !important;
+    }
   }
 `;

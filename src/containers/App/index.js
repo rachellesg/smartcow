@@ -6,7 +6,7 @@ import Sidebar from "../../components/Sidebar";
 // Pages
 import Home from "../../pages/Home";
 import Account from "../../pages/Account";
-import Videos from "../../pages/Videos";
+import Videos from "../../pages/Videos/Create";
 import SavedVideos from "../../pages/Videos/Saved";
 
 import { AppWrapper } from "./styles";
