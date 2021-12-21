@@ -34,11 +34,11 @@ function Videos() {
     { name: "Background", content: () => <Background /> },
   ];
   return (
-    <>
+    <CreateVideoWrapper>
       <Header pageHeaderDetails={pageHeaderDetails} />
       <div className="row">
         <div className="col s12 l7">
-          <CreateVideoWrapper>
+          <div className="create-video">
             <div className="content">
               <div className="video"></div>
               <div className="video-script">
@@ -50,7 +50,7 @@ function Videos() {
                 <SecondaryButton>Listen</SecondaryButton>
               </div>
             </div>
-          </CreateVideoWrapper>
+          </div>
         </div>
         <div className="col s12 l5">
           <TabsWrapper>
@@ -58,7 +58,7 @@ function Videos() {
           </TabsWrapper>
         </div>
       </div>
-    </>
+    </CreateVideoWrapper>
   );
 }
 

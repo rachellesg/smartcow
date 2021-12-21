@@ -9,6 +9,9 @@ export const HeaderWrapper = styled.div`
   padding: 10px 0 30px 0;
   margin-bottom: 30px;
   min-height: 77px;
+  @media screen and (max-width: 768px) {
+    flex-direction: column;
+  }
 
   &:after {
     background: #000000;
@@ -21,8 +24,12 @@ export const HeaderWrapper = styled.div`
     left: 0;
   }
 
-  button {
-    margin-left: 20px;
+  .actions {
+    display: flex;
+
+    button {
+      margin-left: 20px;
+    }
   }
 
   .header-editable {
