@@ -9,6 +9,7 @@ import VideoCard from "../../../elements/Video";
 
 // Assets
 import personOne from "../../../assets/Videos/person-1.svg";
+import { VideoWrapper } from "../styles";
 
 function SavedVideos() {
   const pageHeaderDetails = {
@@ -20,14 +21,14 @@ function SavedVideos() {
     ),
   };
   return (
-    <>
+    <VideoWrapper>
       <Header pageHeaderDetails={pageHeaderDetails} />
       <div className="row">
         <div className="col l3">
           <VideoCard image={personOne} />
         </div>
       </div>
-    </>
+    </VideoWrapper>
   );
 }
 

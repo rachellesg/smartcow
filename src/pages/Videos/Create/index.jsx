@@ -13,6 +13,7 @@ import { PrimaryButton, SecondaryButton } from "../../../elements/Button";
 
 // STyles
 import { CreateVideoWrapper, TabsWrapper } from "./styles";
+import { VideoWrapper } from "../styles";
 
 function Videos() {
   const pageHeaderDetails = {
@@ -34,11 +35,11 @@ function Videos() {
     { name: "Background", content: () => <Background /> },
   ];
   return (
-    <CreateVideoWrapper>
+    <VideoWrapper>
       <Header pageHeaderDetails={pageHeaderDetails} />
       <div className="row">
         <div className="col s12 l7">
-          <div className="create-video">
+          <CreateVideoWrapper>
             <div className="content">
               <div className="video"></div>
               <div className="video-script">
@@ -50,7 +51,7 @@ function Videos() {
                 <SecondaryButton>Listen</SecondaryButton>
               </div>
             </div>
-          </div>
+          </CreateVideoWrapper>
         </div>
         <div className="col s12 l5">
           <TabsWrapper>
@@ -58,7 +59,7 @@ function Videos() {
           </TabsWrapper>
         </div>
       </div>
-    </CreateVideoWrapper>
+    </VideoWrapper>
   );
 }
 

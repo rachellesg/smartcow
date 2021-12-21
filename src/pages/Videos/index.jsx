@@ -27,7 +27,7 @@ function Videos() {
     { name: "Background", content: () => "Yar" },
   ];
   return (
-    <>
+    <VideoWrapper>
       <Header pageHeaderDetails={pageHeaderDetails} />
       <div className="row">
         <div className="col s12 l6">VIDEO</div>
@@ -35,7 +35,7 @@ function Videos() {
           <Tabs pageContent={pages} />
         </div>
       </div>
-    </>
+    </VideoWrapper>
   );
 }
 
