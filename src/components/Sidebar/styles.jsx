@@ -55,7 +55,7 @@ export const SidebarWrapper = styled.div`
     }
 
     /* overwrite materialize css */
-    background: #ffffff;
+    background: transparent !important;
     outline: none;
     border: 0;
     box-shadow: none;
