@@ -1,4 +1,4 @@
-import { useState, useMemo } from "react";
+import { useState, memo, useMemo } from "react";
 
 // Assets
 import personOne from "../../../../assets/Videos/person-1.svg";
@@ -41,7 +41,7 @@ function Actor() {
           </div>
         );
       }),
-    [listOfActors]
+    [selectedActor]
   );
   return <ActorWrapper>{actors}</ActorWrapper>;
 }

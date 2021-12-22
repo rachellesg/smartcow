@@ -27,7 +27,6 @@ function Videos() {
       </Link>
     ),
   };
-  const editableHeaderOnClick = () => {};
 
   const pages = [
     { name: "Actor", content: () => <Actor /> },
