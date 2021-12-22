@@ -36,6 +36,11 @@ export const HeaderWrapper = styled.div`
       .input {
         position: relative;
         z-index: 10;
+        max-width: 100vw;
+        @media screen and (max-width: 768px) {
+          padding: 20px;
+          box-sizing: border-box;
+        }
         textarea {
           font-size: 15px;
           line-height: 22px;
@@ -48,6 +53,10 @@ export const HeaderWrapper = styled.div`
           height: 65px;
           max-height: 65px;
           max-width: 500px;
+          @media screen and (max-width: 768px) {
+            width: 100vw;
+            max-width: 100vw;
+          }
         }
         input[type="text"] {
           width: 350px;
