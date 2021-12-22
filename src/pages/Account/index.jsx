@@ -12,11 +12,20 @@ import Tabs from "../../elements/Tabs";
 // Style
 import { AccountWrapper } from "./styles";
 
+const logOut = () => {
+  localStorage.clear();
+};
+
 function Account() {
   const pageHeaderDetails = {
     pageTitle: "My Account",
-    buttonsHeader: () => <a href="#logout">Logout</a>,
+    buttonsHeader: () => (
+      <a onClick={logOut} href="#">
+        Logout
+      </a>
+    ),
   };
+
   const pages = [
     { name: "Profile", content: () => <Profile /> },
     { name: "My Plan", content: () => <Plan /> },
