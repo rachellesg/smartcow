@@ -36,6 +36,19 @@ export const HeaderWrapper = styled.div`
       .input {
         position: relative;
         z-index: 10;
+        textarea {
+          font-size: 15px;
+          line-height: 22px;
+          color: #666666;
+          border-top: 0;
+          border-left: 0;
+          border-right: 0;
+          padding: 15px 0;
+          width: 500px;
+          height: 65px;
+          max-height: 65px;
+          max-width: 500px;
+        }
         input[type="text"] {
           width: 350px;
           font-size: 22px;
@@ -54,19 +67,25 @@ export const HeaderWrapper = styled.div`
           align-items: start;
           flex: 0 1 33%;
           flex-wrap: wrap;
+          margin: 20px 0;
           .tag {
             color: #999999;
-            font-size: 12px;
-            background: #f4f4f4;
+            font-size: 14px;
+            background: transparent;
             border-radius: 6px;
-            padding: 2px 8px;
+            padding: 3px 13px;
             border: 1px solid #999999;
-            margin-right: 5px;
+            margin-right: 10px;
             margin-bottom: 5px;
             &:last-child {
               margin-right: 0;
             }
           }
+        }
+        button {
+          font-weight: 600;
+          font-size: 14px;
+          line-height: 21px;
         }
       }
     }
