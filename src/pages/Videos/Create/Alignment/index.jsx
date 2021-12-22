@@ -12,6 +12,7 @@ function Alignment() {
       {listOfButtons.map((button) => {
         return (
           <SecondaryButton
+            key={button}
             className={`${selectedAlignment === button ? "active" : ""}`}
             onClick={() => setSelectedAlignment(button)}
           >
