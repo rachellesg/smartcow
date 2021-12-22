@@ -42,7 +42,7 @@ function Header({ pageHeaderDetails }) {
                 <PrimaryButton onClick={handleSave}>Save</PrimaryButton>
               </div>
             ) : (
-              <div onClick={editOnClick}>
+              <div className="header-title" onClick={editOnClick}>
                 {videoTitle} <ChevronIcon />
               </div>
             )}

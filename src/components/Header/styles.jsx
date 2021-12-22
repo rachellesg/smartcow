@@ -114,6 +114,11 @@ export const HeaderWrapper = styled.div`
     left: 0;
   }
 
+  .header-title {
+    position: relative;
+    word-break: break-all;
+  }
+
   .actions {
     display: flex;
 
