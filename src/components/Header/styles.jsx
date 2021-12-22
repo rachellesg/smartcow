@@ -36,9 +36,9 @@ export const HeaderWrapper = styled.div`
       .input {
         position: relative;
         z-index: 10;
-        max-width: 100vw;
         @media screen and (max-width: 768px) {
           padding: 20px;
+          max-width: 100vw;
           box-sizing: border-box;
         }
         textarea {
@@ -55,17 +55,20 @@ export const HeaderWrapper = styled.div`
           max-width: 500px;
           @media screen and (max-width: 768px) {
             width: 100vw;
-            max-width: 100vw;
+            max-width: 100%;
           }
         }
         input[type="text"] {
-          width: 350px;
+          width: 500px;
           font-size: 22px;
           line-height: 33px;
           font-weight: 500;
 
           color: #3860ad;
           border: 0;
+          @media screen and (max-width: 768px) {
+            max-width: 100%;
+          }
           &:focus {
             box-shadow: 0 1px 0 0 #b3caf7;
           }

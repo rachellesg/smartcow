@@ -87,8 +87,9 @@ export const SidebarWrapper = styled.div`
         height: 60px;
         border-radius: 10px;
         @media screen and (max-width: 768px) {
-          width: 30px;
-          height: 30px;
+          width: 40px;
+          height: 40px;
+          border-radius: 50%;
           margin: 0 10px;
         }
         &.active {

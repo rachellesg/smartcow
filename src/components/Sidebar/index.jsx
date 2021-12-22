@@ -7,20 +7,21 @@ import logo from "../../assets/logo.svg";
 import account from "../../assets/sidebar_account.svg";
 import CreateVideoIcon from "../../assets/Icons/CreateVideo";
 import SavedVideoIcon from "../../assets/Icons/SavedVideo";
-import CrossIcon from "../../assets/Icons/Cross";
 
 function Sidebar() {
   const [isActive, setIsActive] = useState(false);
   return (
     <SidebarWrapper>
-      <div className="logo">
-        <img
-          src={logo}
-          style={{ height: "40px" }}
-          className="App-logo"
-          alt="logo"
-        />
-      </div>
+      <NavLink to="/">
+        <div className="logo">
+          <img
+            src={logo}
+            style={{ height: "40px" }}
+            className="App-logo"
+            alt="logo"
+          />
+        </div>
+      </NavLink>
       <nav>
         <div className="nav-links">
           <NavLink
