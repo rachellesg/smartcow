@@ -7,6 +7,11 @@ export const SidebarWrapper = styled.div`
   align-items: center;
   position: relative;
 
+  @media screen and (max-width: 993px) {
+    flex-direction: row;
+    align-items: flex-start;
+  }
+
   margin: 0 !important;
   &:after {
     content: "";
@@ -20,6 +25,10 @@ export const SidebarWrapper = styled.div`
   }
   .logo {
     margin-bottom: 75px;
+
+    @media screen and (max-width: 993px) {
+      margin-bottom: 25px;
+    }
   }
 
   @media screen and (max-width: 768px) {
@@ -35,16 +44,29 @@ export const SidebarWrapper = styled.div`
     align-items: center;
     height: 80vh;
 
+    a {
+      color: #999999;
+    }
+
+    @media screen and (max-width: 993px) {
+      // Mobile Menu
+      align-items: start;
+      flex-direction: row;
+    }
+
     /* overwrite materialize css */
     background: #ffffff;
     outline: none;
     border: 0;
     box-shadow: none;
+    color: #999999;
 
     @media screen and (max-width: 993px) {
-      height: 0;
+      justify-content: end;
+      height: auto;
     }
 
+    // Desktop Menu Links
     .nav-links {
       display: flex;
       flex-direction: column;
@@ -52,7 +74,7 @@ export const SidebarWrapper = styled.div`
       align-items: center;
 
       @media screen and (max-width: 768px) {
-        display: none;
+        flex-direction: row;
       }
 
       a {
@@ -64,6 +86,11 @@ export const SidebarWrapper = styled.div`
         width: 60px;
         height: 60px;
         border-radius: 10px;
+        @media screen and (max-width: 768px) {
+          width: 30px;
+          height: 30px;
+          margin: 0 10px;
+        }
         &.active {
           background: #ebf2ff;
           svg {
@@ -81,9 +108,9 @@ export const SidebarWrapper = styled.div`
     .account {
       bottom: 0;
 
-      @media screen and (max-width: 768px) {
+      /* @media screen and (max-width: 768px) {
         display: none;
-      }
+      } */
     }
   }
 `;
