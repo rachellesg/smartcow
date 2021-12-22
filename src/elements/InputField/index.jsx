@@ -6,14 +6,18 @@ export default function InputField({
   fieldId,
   fieldType,
 }) {
+  const handleSubmit = () => {
+    console.log(fieldValue);
+  };
   return (
     <InputFieldWrapper className="input-field">
       <label htmlFor={fieldId}>{fieldName}</label>
       <input
         id={fieldId}
-        value={fieldValue || undefined}
+        value={fieldValue || " "}
         type={fieldType || "text"}
         className="validate"
+        onChange={handleSubmit}
       />
     </InputFieldWrapper>
   );
