@@ -11,7 +11,7 @@ export const SidebarWrapper = styled.div`
   &:after {
     content: "";
     position: absolute;
-    right: 0;
+    right: -20px;
     top: 0;
     height: 100%;
     width: 1px;
@@ -41,7 +41,7 @@ export const SidebarWrapper = styled.div`
     border: 0;
     box-shadow: none;
 
-    @media screen and (max-width: 768px) {
+    @media screen and (max-width: 993px) {
       height: 0;
     }
 

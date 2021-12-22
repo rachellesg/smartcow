@@ -29,8 +29,13 @@ export const AppWrapper = styled.div`
   }
 
   @media screen and (min-width: 1024px) {
+    .sidebar {
+      position: fixed;
+      max-width: 100px;
+      width: 100%;
+    }
     .main-content {
-      margin-left: 40px !important;
+      margin-left: 120px !important;
     }
   }
 `;
