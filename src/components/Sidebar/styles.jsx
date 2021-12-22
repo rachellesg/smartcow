@@ -61,7 +61,7 @@ export const SidebarWrapper = styled.div`
     box-shadow: none;
     color: #999999;
 
-    @media screen and (max-width: 993px) {
+    @media screen and (max-width: 768px) {
       justify-content: end;
       height: auto;
     }
