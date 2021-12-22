@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useMemo } from "react";
 
 // Assets
 import personOne from "../../../../assets/Videos/person-1.svg";
@@ -11,36 +11,37 @@ import actorMay from "../../../../assets/Videos/may.svg";
 
 import { ActorWrapper } from "./styles";
 
+const listOfActors = [
+  { name: "Anna", image: actorAnna },
+  { name: "Yoyo", image: personOne },
+  { name: "Skye", image: actorSkye },
+  { name: "Mike", image: actorMike },
+  { name: "Vincent", image: actorVincent },
+  { name: "Peter", image: actorPeter },
+  { name: "May", image: actorMay },
+];
+
 function Actor() {
   const [selectedActor, setSelectedActor] = useState("Yoyo");
-  const listOfActors = [
-    { name: "Anna", image: actorAnna },
-    { name: "Yoyo", image: personOne },
-    { name: "Skye", image: actorSkye },
-    { name: "Mike", image: actorMike },
-    { name: "Vincent", image: actorVincent },
-    { name: "Peter", image: actorPeter },
-    { name: "May", image: actorMay },
-  ];
-  return (
-    <ActorWrapper>
-      {listOfActors.map((item) => {
-        const { name, image } = item;
-        return (
-          <div
-            className={`item${selectedActor === name ? " active" : ""}`}
-            key={name}
-            onClick={() => setSelectedActor(name)}
-          >
-            <div className="image">
-              <img src={image} />
-            </div>
-            <div className="name">{name}</div>
+
+  const actors = useMemo(() =>
+    listOfActors.map((item) => {
+      const { name, image } = item;
+      return (
+        <div
+          className={`item${selectedActor === name ? " active" : ""}`}
+          key={name}
+          onClick={() => setSelectedActor(name)}
+        >
+          <div className="image">
+            <img src={image} />
           </div>
-        );
-      })}
-    </ActorWrapper>
+          <div className="name">{name}</div>
+        </div>
+      );
+    })
   );
+  return <ActorWrapper>{actors}</ActorWrapper>;
 }
 
 export default Actor;
