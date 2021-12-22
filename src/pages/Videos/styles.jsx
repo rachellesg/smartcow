@@ -10,7 +10,7 @@ export const VideoWrapper = styled.div`
 
         position: fixed;
         bottom: 0;
-        z-index: 1;
+        z-index: 2;
         padding: 20px;
         background: #ffffff;
       }

@@ -23,8 +23,8 @@ function SavedVideos() {
   return (
     <VideoWrapper>
       <Header pageHeaderDetails={pageHeaderDetails} />
-      <div className="row">
-        <div className="col l3">
+      <div className="row saved-videos">
+        <div className="col l4">
           <VideoCard image={personOne} />
         </div>
       </div>

@@ -2,6 +2,7 @@ import { Link } from "react-router-dom";
 
 // Pages
 import Actor from "./Actor";
+import Alignment from "./Alignment";
 import Background from "./Background";
 
 // Components
@@ -31,7 +32,7 @@ function Videos() {
   const pages = [
     { name: "Actor", content: () => <Actor /> },
     { name: "Voice", content: () => "Wut" },
-    { name: "Alignment", content: () => "Yar" },
+    { name: "Alignment", content: () => <Alignment /> },
     { name: "Background", content: () => <Background /> },
   ];
   return (
