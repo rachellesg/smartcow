@@ -24,22 +24,24 @@ const listOfActors = [
 function Actor() {
   const [selectedActor, setSelectedActor] = useState("Yoyo");
 
-  const actors = useMemo(() =>
-    listOfActors.map((item) => {
-      const { name, image } = item;
-      return (
-        <div
-          className={`item${selectedActor === name ? " active" : ""}`}
-          key={name}
-          onClick={() => setSelectedActor(name)}
-        >
-          <div className="image">
-            <img src={image} />
+  const actors = useMemo(
+    () =>
+      listOfActors.map((item) => {
+        const { name, image } = item;
+        return (
+          <div
+            className={`item${selectedActor === name ? " active" : ""}`}
+            key={name}
+            onClick={() => setSelectedActor(name)}
+          >
+            <div className="image">
+              <img src={image} />
+            </div>
+            <div className="name">{name}</div>
           </div>
-          <div className="name">{name}</div>
-        </div>
-      );
-    })
+        );
+      }),
+    [listOfActors]
   );
   return <ActorWrapper>{actors}</ActorWrapper>;
 }
