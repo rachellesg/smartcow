@@ -28,7 +28,7 @@ export const AppWrapper = styled.div`
   @media screen and (max-width: 768px) {
   }
 
-  @media screen and (min-width: 1024px) {
+  @media screen and (min-width: 993px) {
     .sidebar {
       position: fixed;
       max-width: 100px;
