@@ -1,3 +1,5 @@
+import { Navigate, Link } from "react-router-dom";
+
 // Pages
 import Profile from "./Profile";
 import Plan from "./Plan";
@@ -12,17 +14,13 @@ import Tabs from "../../elements/Tabs";
 // Style
 import { AccountWrapper } from "./styles";
 
-const logOut = () => {
-  localStorage.clear();
-};
-
 function Account() {
   const pageHeaderDetails = {
     pageTitle: "My Account",
     buttonsHeader: () => (
-      <a onClick={logOut} href="#">
+      <Link to="/login" onClick={logOut}>
         Logout
-      </a>
+      </Link>
     ),
   };
 
@@ -32,10 +30,19 @@ function Account() {
     { name: "Billing", content: () => <Billing /> },
   ];
 
+  const logOut = () => {
+    sessionStorage.clear();
+    window.location.reload();
+    <Navigate to="/login" />;
+  };
   return (
     <AccountWrapper>
       <Header pageHeaderDetails={pageHeaderDetails} />
-      <Tabs pageContent={pages} />
+      {sessionStorage.getItem("token") !== "sm4rtcow" ? (
+        <Navigate to="/login" />
+      ) : (
+        <Tabs pageContent={pages} />
+      )}
     </AccountWrapper>
   );
 }

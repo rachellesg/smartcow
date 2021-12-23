@@ -4,23 +4,18 @@ import { Navigate } from "react-router-dom";
 import Header from "../../components/Header";
 import { HomeWrapper } from "./styles";
 
-// Pages
-
-import Login from "./Login";
-
-function Home() {
+function Home({ params }) {
   const pageHeaderDetails = {
-    pageTitle: "Sign In",
+    pageTitle: "Home",
   };
 
-  const getToken = localStorage.getItem("token");
+  const getToken = sessionStorage.getItem("token");
 
-  console.log(getToken);
+  console.log(params);
 
   return (
     <HomeWrapper>
       <Header pageHeaderDetails={pageHeaderDetails} />
-      {getToken === "sm4rtcow" ? <Navigate to="/videos/saved" /> : <Login />}
       <div className="fullwidth-background" />
     </HomeWrapper>
   );

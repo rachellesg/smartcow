@@ -3,9 +3,10 @@ import styled from "styled-components";
 export const SidebarWrapper = styled.div`
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
   position: relative;
+  height: 100vh;
 
   @media screen and (max-width: 993px) {
     flex-direction: row;
