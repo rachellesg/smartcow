@@ -12,7 +12,7 @@ function Login() {
   const pageHeaderDetails = {
     pageTitle: "Sign In",
   };
-  const getToken = sessionStorage.getItem("token");
+  const getToken = localStorage.getItem("token");
   const token = "sm4rtcow";
   const [email, setEmail] = useState("13bala90@gmail.com");
   const [password, setPassword] = useState("123");
@@ -21,7 +21,7 @@ function Login() {
     console.log("clicked");
     window.location.reload();
 
-    sessionStorage.setItem("token", "sm4rtcow");
+    localStorage.setItem("token", "sm4rtcow");
   };
   return (
     <HomeWrapper>

@@ -31,14 +31,14 @@ function Account() {
   ];
 
   const logOut = () => {
-    sessionStorage.clear();
+    localStorage.clear();
     window.location.reload();
     <Navigate to="/login" />;
   };
   return (
     <AccountWrapper>
       <Header pageHeaderDetails={pageHeaderDetails} />
-      {sessionStorage.getItem("token") !== "sm4rtcow" ? (
+      {localStorage.getItem("token") !== "sm4rtcow" ? (
         <Navigate to="/login" />
       ) : (
         <Tabs pageContent={pages} />

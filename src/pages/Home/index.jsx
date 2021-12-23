@@ -9,7 +9,7 @@ function Home({ params }) {
     pageTitle: "Home",
   };
 
-  const getToken = sessionStorage.getItem("token");
+  const getToken = localStorage.getItem("token");
 
   console.log(params);
 

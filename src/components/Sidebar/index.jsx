@@ -8,7 +8,7 @@ import CreateVideoIcon from "../../assets/Icons/CreateVideo";
 import SavedVideoIcon from "../../assets/Icons/SavedVideo";
 
 function Sidebar() {
-  const getToken = sessionStorage.getItem("token");
+  const getToken = localStorage.getItem("token");
 
   return (
     <SidebarWrapper>
