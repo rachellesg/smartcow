@@ -1,4 +1,3 @@
-import { useState } from "react";
 import { Link, NavLink } from "react-router-dom";
 import { SidebarWrapper } from "./styles";
 
@@ -9,7 +8,6 @@ import CreateVideoIcon from "../../assets/Icons/CreateVideo";
 import SavedVideoIcon from "../../assets/Icons/SavedVideo";
 
 function Sidebar() {
-  const [isActive, setIsActive] = useState(false);
   return (
     <SidebarWrapper>
       <NavLink to="/">
