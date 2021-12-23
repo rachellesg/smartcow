@@ -11,6 +11,7 @@ export const SidebarWrapper = styled.div`
   @media screen and (max-width: 993px) {
     flex-direction: row;
     align-items: flex-start;
+    height: auto;
   }
 
   margin: 0 !important;

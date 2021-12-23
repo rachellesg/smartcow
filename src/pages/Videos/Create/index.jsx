@@ -2,6 +2,7 @@ import { Link } from "react-router-dom";
 
 // Pages
 import Actor from "./Actor";
+import Voice from "./Voice";
 import Alignment from "./Alignment";
 import Background from "./Background";
 
@@ -30,7 +31,7 @@ function Videos() {
 
   const pages = [
     { name: "Actor", content: () => <Actor /> },
-    { name: "Voice", content: () => "Wut" },
+    { name: "Voice", content: () => <Voice /> },
     { name: "Alignment", content: () => <Alignment /> },
     { name: "Background", content: () => <Background /> },
   ];
