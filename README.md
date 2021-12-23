@@ -1,6 +1,7 @@
 # Smartcow Test
 
 ### Started 13 December 2021
+https://jolly-mcclintock-3bfc98.netlify.app/
 
 Create React.js app based on a Figma mock up
 
@@ -9,7 +10,7 @@ Create React.js app based on a Figma mock up
 3. Colors layout and alignment should be same
 4. Use minimal js and for CSS use SCSS framework
 5. Entire react application should be responsive
-6. Host the application in any free hosting environments like netifly etc
+6. Host the application in any free hosting environments like netifly etc 
 
 ## Getting Started
 
