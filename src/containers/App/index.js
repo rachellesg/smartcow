@@ -10,6 +10,7 @@ import Sidebar from "../../components/Sidebar";
 
 // Pages
 import Home from "../../pages/Home";
+import Error from "../../pages/404";
 import Account from "../../pages/Account";
 import Videos from "../../pages/Videos/Create";
 import SavedVideos from "../../pages/Videos/Saved";
@@ -34,7 +35,7 @@ function App() {
               <Route exact path="/account" element={<Account />} />
               <Route exact path="/videos/create" element={<Videos />} />
               <Route exact path="/videos/saved" element={<SavedVideos />} />
-              <Route exact path="*" element={<Home />} />
+              <Route exact path="*" element={<Error />} />
 
               <Route exact path="/login" element={<Login />} />
               <Route
