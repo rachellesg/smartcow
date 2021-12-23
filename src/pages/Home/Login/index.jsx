@@ -15,7 +15,7 @@ function Login() {
   const getToken = sessionStorage.getItem("token");
   const token = "sm4rtcow";
   const [email, setEmail] = useState("13bala90@gmail.com");
-  const [password, setPassword] = useState("");
+  const [password, setPassword] = useState("123");
 
   const submitForm = (e) => {
     console.log("clicked");
