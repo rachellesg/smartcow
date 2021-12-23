@@ -15,13 +15,12 @@ function Login() {
   const getToken = sessionStorage.getItem("token");
   const token = "sm4rtcow";
   const [email, setEmail] = useState("13bala90@gmail.com");
-  const [password, setPassword] = useState("");
+  const [password, setPassword] = useState("123");
 
   const submitForm = (e) => {
     console.log("clicked");
     window.location.reload();
-
-    sessionStorage.setItem("token", "sm4rtcow");
+    sessionStorage.setItem("token", token);
   };
   return (
     <HomeWrapper>
@@ -62,7 +61,7 @@ function Login() {
               <Link to="/videos/saved">Login</Link>
             </PrimaryButton>
             <p className="sign-up">
-              New here? <a href="#">Sign up</a>
+              New here? <Link to="/register">Sign up</Link>
             </p>
           </div>
         </form>
